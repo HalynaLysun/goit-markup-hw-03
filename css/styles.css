@@ -13,6 +13,17 @@ body {
     color: var(--color-secondary);
     font-family: 'Roboto', sans-serif;
     font-style: normal;
+    width: 1440px;
+    height: 3200px;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
 }
 
 .link {
@@ -21,6 +32,45 @@ body {
 
 .list {
     list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    height: 72px;
+}
+
+.container {
+    width: 1158px;
+    margin-left: 156px;
+    margin-right: 156px;
+    align-items: center;
+    justify-content: space-between
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    margin-right: 332px;
+    gap: 40px;
+}
+
+.header-address-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .nav-link {
@@ -31,6 +81,8 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
+
 }
 
 .header-logo {
@@ -62,6 +114,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
 }
 
 .header-address-link {
@@ -73,10 +126,19 @@ body {
     color: var(--color-filtr);
 }
 
+.section {
+    padding: auto;
+} 
 
 .section-title {
+    background: url(./people-office.jpg);
+
     background-color: var(--color-primary);
     color: var(--color-fading);
+    width: 1440px;
+    height: 600px;
+
+
 }
 
 .main-title {
@@ -85,6 +147,11 @@ body {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
+
+    padding-top: 188px;
+
+    margin-bottom: 48px;
+
 }
 
 .section-title-btn {
@@ -96,6 +163,13 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+
+    width: 169px;
+    height: 56px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: 480px
+ 
 }
 
 .section-hero-title {
@@ -153,6 +227,14 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.customers-title {
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
 }
 
@@ -226,4 +308,16 @@ body {
 
 .footer-text {
     color: var(--color-brand);
+}
+
+.social-title {
+    color: var(--color-fading);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.footer {
+    display: flex;
 }
