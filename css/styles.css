@@ -272,6 +272,13 @@ ul {
     color: rgba(0, 0, 0, 0);
 }
 
+.filters-list {
+    margin-top: 96px;
+    margin-bottom: 72px;
+    gap: 24px;
+    justify-content: center;
+}
+
 .filters-btn {
     cursor: pointer;
     color: var(--color-active);
@@ -288,6 +295,10 @@ ul {
 .filters-btn:focus {
     background-color: var(--color-filtr);
     color: var(--color-fading);
+}
+
+.portfolio-list {
+    margin-bottom: 120px;
 }
 
 .portfolio-title {
