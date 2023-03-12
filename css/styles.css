@@ -13,8 +13,6 @@ body {
     color: var(--color-secondary);
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    width: 1440px;
-    height: 3200px;
     box-sizing: border-box;
 }
 
@@ -25,6 +23,12 @@ p, h1, h2, h3, h4, h5, h6 {
 ul {
     padding-left: 0;
     margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .link {
@@ -38,9 +42,8 @@ ul {
 }
 
 .container {
-    width: 1158px;
-    margin-left: 156px;
-    margin-right: 156px;
+    max-width: 1158px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -49,8 +52,9 @@ ul {
 .header {
     display: flex;
     align-items: center;
-    width: 1440px;
+    max-width: 1440px;
     height: 72px;
+    border-bottom: 2px solid var(--color-brand);
 }
 
 .header-container {
@@ -129,6 +133,10 @@ ul {
 
 /**--MAIN--**/
 
+.section {
+    padding: 120px 0;
+}
+
 .section-title {
     padding-top: 188px;
     padding-bottom: 188px;
@@ -137,7 +145,8 @@ ul {
 .section-title {
     background-color: var(--color-primary);
     color: var(--color-fading);
-    width: 1440px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .main-title {
@@ -159,31 +168,22 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-
-
     min-width: 169px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 16px 32px;
     margin: 0 auto;
     display: flex;
+    border: none;
 }
 
-/**--HERO--**/
+/**--BENEFITS--**/
 
-.section-hero {
-    width: 1128px;
-    display: flex;
-    margin: 0 auto;
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
-
-.section-hero-list {
+.section-benefits-list {
     gap: 24px;
 }
 
-.section-hero-title {
+.section-benefits-title {
     color: var(--color-primary);
     font-weight: 500;
     font-size: 20px;
@@ -194,7 +194,7 @@ ul {
     margin-bottom: 8px;
 }
 
-.section-hero-txt {
+.section-benefits-txt {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -204,12 +204,17 @@ ul {
  /**--GALLERY--**/
 
  .gallery {
-    width: 1128px;
+    max-width: 1128px;
     margin: 0 auto;
+    padding-top: 0;
  }
 
  .gallery-list {
     gap: 24px;
+ }
+
+ .gallery-item {
+    max-width: calc(100% - 48px / 3);
  }
 
 .gallery-title {
@@ -244,11 +249,18 @@ ul {
 
 .team-list {
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 .team-item {
     background-color: var(--color-fading);
-    padding-bottom: 32px;
+    max-width: calc(100% - 72px / 4);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-name {
+    padding: 32px 16px;
 }
 
 .team-title {
@@ -257,11 +269,8 @@ ul {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-top: 32px;
     text-align: center;
     min-width: 134px;
-    padding-right: 16px;
-    padding-left: 16px;
 }
 
 .team-txt {
@@ -271,8 +280,6 @@ ul {
     margin-top: 8px;
     min-width: 128px;
     text-align: center;
-    padding-right: 16px;
-    padding-left: 16px;
 }
 
 
@@ -299,6 +306,9 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    padding: 12px 24px;
+    border: 1px solid var(--color-brand);
+    border-radius: 4px;
 }
 
 .filters-btn:hover,
@@ -312,7 +322,13 @@ ul {
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
-    width: calc(100% - 24px / 3);
+    flex-basis: calc(100% - 48px / 3)
+}
+
+.portfolio-container {
+    border: 1px solid var(--color-brand);
+    border-top: none;
+    padding: 32px 0;
 }
 
 .portfolio-title {
@@ -322,7 +338,6 @@ ul {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-top: 32px;
     margin-bottom: 8px;
     padding-left: 16px;
     min-width: 290px;
@@ -335,7 +350,6 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding-left: 16px;
-    padding-bottom: 32px;
     min-width: 30px;
 }
 
@@ -345,7 +359,6 @@ ul {
     background-color: var(--color-primary);
     padding-top: 100px;
     padding-bottom: 100px;
-    display: flex;
 }
 
 
