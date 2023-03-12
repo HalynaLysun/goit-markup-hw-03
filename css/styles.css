@@ -211,7 +211,6 @@ img {
 
  .gallery-list {
     gap: 24px;
-    flex-wrap: wrap;
  }
 
  .gallery-item {
