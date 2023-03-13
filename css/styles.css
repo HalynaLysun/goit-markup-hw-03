@@ -50,16 +50,14 @@ img {
 /**--HEADER--**/
 
 .header {
-    display: flex;
-    align-items: center;
-    max-width: 1440px;
-    height: 72px;
     border-bottom: 2px solid var(--color-brand);
 }
 
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 24px 24px;
 }
 
 .nav {
@@ -69,7 +67,6 @@ img {
 
 .header-list {
     display: flex;
-    margin-right: 332px;
     gap: 40px;
 }
 
@@ -183,6 +180,10 @@ img {
     gap: 24px;
 }
 
+.section-benefits-item {
+    flex-basis: calc(100% - 72px / 4);
+}
+
 .section-benefits-title {
     color: var(--color-primary);
     font-weight: 500;
@@ -214,7 +215,7 @@ img {
  }
 
  .gallery-item {
-    max-width: calc(100% - 48px / 3);
+    flex-basis: calc(100% - 48px / 3);
  }
 
 .gallery-title {
@@ -287,7 +288,6 @@ img {
 }
 
 .filters-list {
-    margin-top: 96px;
     margin-bottom: 72px;
     gap: 24px;
     justify-content: center;
@@ -315,39 +315,32 @@ img {
 }
 
 .portfolio-list {
-    margin-bottom: 120px;
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
-    flex-basis: calc(100% - 48px / 3)
+    flex-basis: calc(100% - 48px / 3);
 }
 
 .portfolio-container {
     border: 1px solid var(--color-brand);
     border-top: none;
-    padding: 32px 0;
+    padding: 32px 16px;
 }
 
 .portfolio-title {
-    font-family: 'Roboto', sans-serif;
     color: var(--color-primary);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-    padding-left: 16px;
-    min-width: 290px;
 }
 
 .portfolio-txt {
-    font-family: 'Roboto', sans-serif;
     color: var(--color-secondary);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-left: 16px;
-    min-width: 30px;
 }
 
 /**--FOOTER--**/
